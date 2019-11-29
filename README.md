@@ -35,3 +35,4 @@ You can see a running demo of the project in [this video](https://www.youtube.co
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
+* Amazing pixelart from [Nate Kling](https://twitter.com/natekling)
