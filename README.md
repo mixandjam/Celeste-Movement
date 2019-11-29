@@ -27,7 +27,7 @@ You can see a running demo of the project in [this video](https://www.youtube.co
 
 ## Authors
 
-* **André Cardoso** - [Github](https://github.com/andremc)/[Twitter](https://twitter.com/andre_mc)
+* **André Cardoso** - [Github](https://github.com/andremc)
 <br>[![Twitter Follow](https://img.shields.io/twitter/follow/andre_mc.svg?style=social)](https://twitter.com/andre_mc)  
 
 ## License
