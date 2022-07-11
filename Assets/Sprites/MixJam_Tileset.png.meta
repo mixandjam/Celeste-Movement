@@ -363,7 +363,7 @@ TextureImporter:
       213: -4819675165705204945
     second: MixJam_Tileset_119
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -383,6 +383,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -392,8 +394,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -414,11 +416,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -429,7 +435,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -440,7 +447,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -451,7 +459,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -462,6 +471,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2995,6 +3005,127 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      MixJam_Tileset_107: 1123866699672897141
+      MixJam_Tileset_40: 1356368879045375484
+      MixJam_Tileset_97: -7601410254042762610
+      MixJam_Tileset_89: -4619524586245321640
+      MixJam_Tileset_12: -8270331281527334392
+      MixJam_Tileset_45: -4843860334793799019
+      MixJam_Tileset_106: 2905584540126486190
+      MixJam_Tileset_63: 6938115663104622559
+      MixJam_Tileset_85: -9191768476971269289
+      MixJam_Tileset_105: -3456623210251736453
+      MixJam_Tileset_13: 537081519485143889
+      MixJam_Tileset_103: -4923266088318748623
+      MixJam_Tileset_88: -3598976862593448626
+      MixJam_Tileset_47: 7820622987098768705
+      MixJam_Tileset_94: 2936440820691198360
+      MixJam_Tileset_20: 9083474923067856150
+      MixJam_Tileset_86: -2415235478483302899
+      MixJam_Tileset_79: 6587973460293318777
+      MixJam_Tileset_82: -6144063293668443696
+      MixJam_Tileset_115: -7669939368591145477
+      MixJam_Tileset_58: 6342299486533363446
+      MixJam_Tileset_19: 1764465618954128923
+      MixJam_Tileset_118: 197775142291761193
+      MixJam_Tileset_35: -6256164026222680904
+      MixJam_Tileset_49: -9126331649499654817
+      MixJam_Tileset_77: 7809275255615054031
+      MixJam_Tileset_61: 6526503813144288912
+      MixJam_Tileset_1: -7697602656266306098
+      MixJam_Tileset_104: 1073197032167430632
+      MixJam_Tileset_119: -4819675165705204945
+      MixJam_Tileset_29: -1656210064701071981
+      MixJam_Tileset_60: 6588256939634428446
+      MixJam_Tileset_36: 7290152086962839158
+      MixJam_Tileset_4: 6886517934158065661
+      MixJam_Tileset_3: -1168316240880415834
+      MixJam_Tileset_62: 1709762087785723726
+      MixJam_Tileset_7: -6491519255472120097
+      MixJam_Tileset_24: 643308459633584550
+      MixJam_Tileset_56: -4183392810915696959
+      MixJam_Tileset_76: -2223224147836825558
+      MixJam_Tileset_34: 7254766466508165149
+      MixJam_Tileset_38: 220144000612037140
+      MixJam_Tileset_25: 8638710145591149819
+      MixJam_Tileset_96: 2457097968675155019
+      MixJam_Tileset_109: -21600018304728763
+      MixJam_Tileset_110: -358902399868692501
+      MixJam_Tileset_92: 7776068982076620293
+      MixJam_Tileset_116: 8878878610145732447
+      MixJam_Tileset_23: 1555266303058538717
+      MixJam_Tileset_73: -6550639268026739345
+      MixJam_Tileset_99: -5955886193500172313
+      MixJam_Tileset_48: -4579106680369715177
+      MixJam_Tileset_78: 3306552764712012419
+      MixJam_Tileset_39: 7256757035440384513
+      MixJam_Tileset_21: -4283443611438809227
+      MixJam_Tileset_46: -1613561968887605782
+      MixJam_Tileset_66: -3299198060862220139
+      MixJam_Tileset_111: 6821647360199140892
+      MixJam_Tileset_67: 7361237499630210989
+      MixJam_Tileset_16: -4195006972398123391
+      MixJam_Tileset_44: 3892024173882905625
+      MixJam_Tileset_6: 199701535691176982
+      MixJam_Tileset_32: -8106886020715656988
+      MixJam_Tileset_83: 3802433332810045050
+      MixJam_Tileset_28: -9081726286707220952
+      MixJam_Tileset_69: -849532030535327001
+      MixJam_Tileset_2: 1982082998987260067
+      MixJam_Tileset_71: 4172137250186681918
+      MixJam_Tileset_75: 7379702432823619106
+      MixJam_Tileset_113: -3372953183734503990
+      MixJam_Tileset_54: 2612853439032802412
+      MixJam_Tileset_90: -6101155499390398806
+      MixJam_Tileset_22: -6997677574629782703
+      MixJam_Tileset_43: 333393801403226309
+      MixJam_Tileset_95: -8595859620718154458
+      MixJam_Tileset_11: -717643223916601832
+      MixJam_Tileset_52: -6162381180218050663
+      MixJam_Tileset_87: 1919784091623631162
+      MixJam_Tileset_93: 8642917061399496787
+      MixJam_Tileset_102: 1677266858560959779
+      MixJam_Tileset_14: 2750537706195873361
+      MixJam_Tileset_17: -6696314851154776208
+      MixJam_Tileset_59: 3523731852098788587
+      MixJam_Tileset_0: -1875360175202868378
+      MixJam_Tileset_9: 5666847934752441667
+      MixJam_Tileset_18: 4889689258904359097
+      MixJam_Tileset_74: -6220689424809281235
+      MixJam_Tileset_51: -8105685908668633391
+      MixJam_Tileset_41: 7835995022882004094
+      MixJam_Tileset_68: 2898299005403480182
+      MixJam_Tileset_98: 2632284792161388775
+      MixJam_Tileset_15: 7873778934758168869
+      MixJam_Tileset_8: -97380367928737409
+      MixJam_Tileset_33: -3983598974886510416
+      MixJam_Tileset_64: -811111697427806746
+      MixJam_Tileset_42: 3517956525836299191
+      MixJam_Tileset_80: -998691541016578334
+      MixJam_Tileset_53: 1685633214626079408
+      MixJam_Tileset_81: 313566163331366563
+      MixJam_Tileset_114: -4051364698441181382
+      MixJam_Tileset_10: -4204875776152431702
+      MixJam_Tileset_55: -3100616112145456294
+      MixJam_Tileset_117: 8176815973081226129
+      MixJam_Tileset_37: 7379160169019482938
+      MixJam_Tileset_5: 7115241598835295139
+      MixJam_Tileset_108: 968816064119124264
+      MixJam_Tileset_70: 3940875597561601817
+      MixJam_Tileset_91: -3103264026101106446
+      MixJam_Tileset_27: 2921044321611756664
+      MixJam_Tileset_112: -1412061697503553083
+      MixJam_Tileset_50: -4083616457512394685
+      MixJam_Tileset_65: -3224214591085619266
+      MixJam_Tileset_57: 738247114325062585
+      MixJam_Tileset_100: 8746527142156896118
+      MixJam_Tileset_26: -4278857821521439800
+      MixJam_Tileset_30: -4171127518925751039
+      MixJam_Tileset_31: -5711296819054529957
+      MixJam_Tileset_72: 5217089990394973450
+      MixJam_Tileset_101: -7397253301878717109
+      MixJam_Tileset_84: -8622603621973952745
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

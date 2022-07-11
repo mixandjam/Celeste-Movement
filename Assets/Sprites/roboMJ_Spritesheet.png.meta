@@ -123,7 +123,7 @@ TextureImporter:
       213: -1672019886118754007
     second: roboMJ_Spritesheet_39
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -143,6 +143,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -152,8 +154,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -174,11 +176,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -189,7 +195,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -200,7 +207,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -211,7 +219,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -222,6 +231,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1075,6 +1085,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      roboMJ_Spritesheet_20: -5552381945504920587
+      roboMJ_Spritesheet_39: -1672019886118754007
+      roboMJ_Spritesheet_38: -3922330973578253358
+      roboMJ_Spritesheet_14: 6402906999301548965
+      roboMJ_Spritesheet_5: 7464468400030163059
+      roboMJ_Spritesheet_8: -2730634729203896315
+      roboMJ_Spritesheet_9: -2736243639198286265
+      roboMJ_Spritesheet_0: 2786891814681364973
+      roboMJ_Spritesheet_1: 5687433107252131833
+      roboMJ_Spritesheet_18: -4720250830627377130
+      roboMJ_Spritesheet_27: 7146071370901965806
+      roboMJ_Spritesheet_11: 3909246498302989061
+      roboMJ_Spritesheet_15: -7927619968588559240
+      roboMJ_Spritesheet_23: 5322493927574532163
+      roboMJ_Spritesheet_3: 795754189083608922
+      roboMJ_Spritesheet_24: 6230076793435738936
+      roboMJ_Spritesheet_26: 4681537685272560755
+      roboMJ_Spritesheet_37: -1310139193878539656
+      roboMJ_Spritesheet_31: -2542186790987638800
+      roboMJ_Spritesheet_7: -4690915760832374034
+      roboMJ_Spritesheet_36: -5868731867026703853
+      roboMJ_Spritesheet_6: 537045875082396868
+      roboMJ_Spritesheet_28: -5545717960385314151
+      roboMJ_Spritesheet_4: -2463261615376184777
+      roboMJ_Spritesheet_32: 1622827134159682759
+      roboMJ_Spritesheet_2: 5918442582276899344
+      roboMJ_Spritesheet_17: 1505792835291174148
+      roboMJ_Spritesheet_22: 2137925641820782853
+      roboMJ_Spritesheet_12: -381322029254959041
+      roboMJ_Spritesheet_13: 500387527323455210
+      roboMJ_Spritesheet_19: -7568865246239973402
+      roboMJ_Spritesheet_10: 3020760022124298646
+      roboMJ_Spritesheet_33: -6225403984534257580
+      roboMJ_Spritesheet_35: -8532860326821112642
+      roboMJ_Spritesheet_21: -282832464339255508
+      roboMJ_Spritesheet_30: -368269008663124046
+      roboMJ_Spritesheet_16: -8916790999047852203
+      roboMJ_Spritesheet_25: 5114660937698946238
+      roboMJ_Spritesheet_29: -4344409008405339008
+      roboMJ_Spritesheet_34: -2560419035706467077
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
