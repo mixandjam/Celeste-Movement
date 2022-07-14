@@ -21,6 +21,7 @@ public class PlayerAnim : MonoBehaviour
     private void FixedUpdate()
     {
         RunAnim();
+        JumpAnim();
     }
     void Update()
     {
@@ -36,6 +37,18 @@ public class PlayerAnim : MonoBehaviour
         else
         {
             playerAnim.SetBool("Run", false);
+        }
+    }
+
+    void JumpAnim()
+    {
+        if (player.checkGround == false)
+        {
+            playerAnim.SetBool("Jump", true);
+        }
+        else
+        {
+            playerAnim.SetBool("Jump", false);
         }
     }
 

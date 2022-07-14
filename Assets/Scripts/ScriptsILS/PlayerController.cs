@@ -8,7 +8,13 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float playerRotate;
 
+    [SerializeField] private float jumpSpeed;
+
     [SerializeField] public bool playerMove = false;
+
+    [SerializeField] public bool checkGround = true;
+
+    [SerializeField] Transform groundChecked;
 
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Vector3 displacement;
@@ -27,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalMovement = Input.GetAxis("Horizontal");
         PlayerMove(horizontalMovement);
+        PlayerJump();
     }
 
     void Update()
@@ -64,7 +71,26 @@ public class PlayerController : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
         Quaternion newRotation = Quaternion.Lerp(rb.rotation, targetRotation, interpolation);
         rb.MoveRotation(newRotation);
+    }
 
+    void PlayerJump()
+    {
+        Vector3 downfloor = transform.TransformDirection(Vector3.down);
+        RaycastHit hit;
+
+        if (Input.GetButton("Jump") && checkGround)
+        {
+            rb.velocity = new Vector3(0f, jumpSpeed, 0f);
+            checkGround = false;
+        }
+        if (Physics.Raycast(groundChecked.position, downfloor, out hit, 0.2f) && hit.collider.CompareTag("Ground"))
+        {
+            checkGround = true;
+        }
+        else
+        {
+            checkGround = false;
+        }
 
     }
 
