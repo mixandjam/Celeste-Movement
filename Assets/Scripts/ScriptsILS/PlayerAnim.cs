@@ -1,55 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerAnim : MonoBehaviour
 {
+    internal static event Action OnIsMovement;
+
     private PlayerController player;
 
-    private Animator playerAnim;
+    [SerializeField] internal Animator playerAnim;
 
     private void Awake()
     {
-        player = FindObjectOfType<PlayerController>();
-        playerAnim = GetComponent<Animator>();
+        player = FindObjectOfType<PlayerController>();        
     }
-    void Start()
+    private void OnEnable()
     {
-        
+        PlayerController.OnIsAnimJump += JumpAnim;
+        PlayerController.OnIsAnimIdle += IdleAnim;
+        PlayerController.OnIsAnimRun += RunAnim;
     }
+   
+    private void IdleAnim() => playerAnim.SetBool("isRun", false);
+    private void RunAnim() => playerAnim.SetBool("isRun", true);
+    private void JumpAnim() => playerAnim.SetTrigger("isJump");
 
-    private void FixedUpdate()
+    private void OnDisable()
     {
-        RunAnim();
-        JumpAnim();
-    }
-    void Update()
-    {
-        
-    }
-
-    void RunAnim()
-    {
-        if (player.playerMove)
-        {
-            playerAnim.SetBool("Run", true);
-        }
-        else
-        {
-            playerAnim.SetBool("Run", false);
-        }
-    }
-
-    void JumpAnim()
-    {
-        if (player.checkGround == false)
-        {
-            playerAnim.SetBool("Jump", true);
-        }
-        else
-        {
-            playerAnim.SetBool("Jump", false);
-        }
+        PlayerController.OnIsAnimJump -= JumpAnim;
+        PlayerController.OnIsAnimIdle -= IdleAnim;
+        PlayerController.OnIsAnimRun -= RunAnim;
     }
 
 }

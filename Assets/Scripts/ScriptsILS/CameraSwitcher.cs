@@ -9,6 +9,26 @@ public static class CameraSwitcher
 
     public static CinemachineVirtualCamera ActiveCamera = null;
 
+    public static bool isActiveCamera(CinemachineVirtualCamera camera)
+    {
+        return camera == ActiveCamera;
+    }
+
+    public static void SwitchCamera(CinemachineVirtualCamera camera)
+    {
+        camera.Priority = 10;
+        ActiveCamera = camera;
+
+        foreach (CinemachineVirtualCamera c in cameras)
+        {
+            if (c != camera)
+            {
+                c.Priority = 0;
+            }
+
+        }
+    }
+          
     public static void Register (CinemachineVirtualCamera camera)
     {
         cameras.Add(camera);

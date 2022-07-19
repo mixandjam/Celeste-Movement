@@ -1,36 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
 public class CameraScene : MonoBehaviour
 {
-    [SerializeField] CinemachineVirtualCamera frontCamera;
-    [SerializeField] CinemachineVirtualCamera rightCamera;
-    [SerializeField] CinemachineVirtualCamera backCamera;
-    [SerializeField] CinemachineVirtualCamera leftCamera;
+    [SerializeField] private CinemachineVirtualCamera[] cinemaMachineVirtual;
 
-    private void OnEnable()
+    [SerializeField] private int index;
+    private void Update()
     {
-        CameraSwitcher.Register(frontCamera);
-        CameraSwitcher.Register(rightCamera);
-        CameraSwitcher.Register(backCamera);
-        CameraSwitcher.Register(leftCamera);
-    }
-
-    private void OnDisable()
-    {
-        CameraSwitcher.Unregister(frontCamera);
-        CameraSwitcher.Unregister(rightCamera);
-        CameraSwitcher.Unregister(backCamera);
-        CameraSwitcher.Unregister(leftCamera);
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))              
         {
-            //Switch Camera
+            index++;
+            switch (index)
+            {
+                case 0:
+                    CheckCineMachine(index);
+                    break;
+                case 1:
+                    CheckCineMachine(index);
+                    break;
+                case 2:
+                    CheckCineMachine(index);
+                    break;
+                case 3:
+                    CheckCineMachine(index);
+                    break;
+            }
+            if (index > 3)
+            {
+                index = 0;
+            }
         }
+    }
+
+    private void CheckCineMachine(int index)
+    {
+        for (int i = 0; i < cinemaMachineVirtual.Length; i++)
+        {
+            cinemaMachineVirtual[i].enabled = false;   
+        }
+        cinemaMachineVirtual[index].enabled = true;
     }
 }
